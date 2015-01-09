@@ -30,5 +30,10 @@
 %</driver>
 % \fi
 %<*package>
+\usepackage{xeCJK}
+\usepackage{indentfirst}             % 首行缩进
+\setlength{\parindent}{2em}
+\XeTeXlinebreaklocale "zh"      %中文自动换行
+\setlength{\parskip}{0.5\baselineskip}
 \renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
 %</package>
