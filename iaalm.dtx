@@ -34,6 +34,32 @@
 \usepackage{indentfirst}             % 首行缩进
 \setlength{\parindent}{2em}
 \XeTeXlinebreaklocale "zh"      %中文自动换行
-\setlength{\parskip}{0.5\baselineskip}
+\setlength{\parskip}{0.5\baselineskip}	%1.5倍段间距
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt	%自动换行余度
 \renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
+
+\newtheorem{example}{例}             % 整体编号
+\newtheorem{algorithm}{算法}
+\newtheorem{theorem}{定理}[section]  % 按 section 编号
+\newtheorem{definition}{定义}
+\newtheorem{axiom}{公理}
+\newtheorem{property}{性质}
+\newtheorem{proposition}{命题}
+\newtheorem{lemma}{引理}
+\newtheorem{corollary}{推论}
+\newtheorem{remark}{注解}
+\newtheorem{condition}{条件}
+\newtheorem{conclusion}{结论}
+\newtheorem{assumption}{假设}
+
+%%%%%%%%%% 一些重定义 %%%%%%%%%%
+\renewcommand{\contentsname}{目录}     % 将Contents改为目录
+\renewcommand{\abstractname}{摘要}     % 将Abstract改为摘要
+\renewcommand{\refname}{参考文献}      % 将References改为参考文献
+\renewcommand{\indexname}{索引}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\renewcommand{\appendixname}{附录}
+%%\renewcommand{\proofname}{证明}
+\renewcommand{\algorithm}{算法}
 %</package>
